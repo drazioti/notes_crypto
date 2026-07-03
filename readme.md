@@ -2,7 +2,7 @@
 
 ## 1ο Μάθημα — [Εισαγωγή](https://docs.google.com/presentation/d/1NOBnDizZfEu4gsCJlDwNHvph-GLuzY9mVpxj0BnORyg/present#slide=id.p)
 
-## 2ο Μάθημα — Εισαγωγή στους υποεκθετικούς αλγορίθμους παραγοντοποίησης
+## 2ο Μάθημα — [Εισαγωγή στους υποεκθετικούς αλγορίθμους παραγοντοποίησης](factor/)
 - Quadratic Sieve
 
 ## 4ο Μάθημα — Eλλειπτικές καμπύλες
