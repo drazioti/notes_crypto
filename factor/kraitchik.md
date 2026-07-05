@@ -7,5 +7,27 @@ $n.$ Σε αυτή την περίπτωση έχουμε ένα μη γνήσι
 
 Υπό ποιές προυποθέσεις το $d\not=1,n;$
 
+Για να απαντήσουμε αυτό το ερώτημα θέτουμε το σύνολο 
 
+$$\mathcal{A}_n=\lbrace(x,y)\in {\mathbb{Z}}_n: x^2\equiv y^2\pmod{n}, \gcd(xy,n)=1\rbrace$$
 
+Εφόσον $\gcd(xy,n)=1$ το $y$ αντιστρέφεται $modn$ επομένως $x=zy$ όπου $z^2\equiv 1\pmod{n}$ και $y$ αντιστρέψιμο $mod{n}$.
+Άρα, 
+
+$$|\mathcal{A}_n|=\phi(n)|\lbrace z:z^2=1\pmod{n}\rbrace|=\phi(n)\times R_n.$$
+
+Θέτω
+
+$$\mathcal{B}_n=\lbrace(x,y)\in \mathcal{A}_n: x\not\equiv \pm y\pmod{n}\rbrace.$$
+
+Aν $n$ περιττός τότε $R_n=2^{r}$ όπου $r=\omega(n)$ το πλήθος των πρωτων διαιρετών του $n.$
+
+Άρα 
+
+$$|\mathcal{B}_n|=|\mathcal{A}_n|-2\phi(n)=(2^r-2)\phi(n).$$
+
+Εύκολα βλέπουμε ότι 
+
+$$\frac{|\mathcal{B}_n|}{|\mathcal{A}_n|}>\frac{1}{2}\ (r>1).$$
+
+Eπομένως, αν υποθέσουμε ότι διαλέγουμε τα $x,y$ τυχαία τότε με πιθανότητα $.5$ θα βρούμε μη τετριμμένη παραγοντοποίηση.
