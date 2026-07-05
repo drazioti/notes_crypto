@@ -3,8 +3,9 @@
 ## 1ο Μάθημα — [Εισαγωγή](https://docs.google.com/presentation/d/1NOBnDizZfEu4gsCJlDwNHvph-GLuzY9mVpxj0BnORyg/present#slide=id.p)
 
 ## 2ο-3o Μάθημα — [Εισαγωγή στους υποεκθετικούς αλγορίθμους παραγοντοποίησης](factor/)
-- Fermat method
-- Quadratic Sieve
+- Μέθοδος του Fermat 
+- Η Βελτιώση του Kraitchik 
+- Μέθοδος του Dixon
 
 ## 4ο Μάθημα — [Eλλειπτικές καμπύλες](elliptic_curves/)
 
