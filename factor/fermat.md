@@ -190,7 +190,7 @@ def fermat_divisor(n: int) -> int | None:
     Output:
         a non-trivial divisor of n, or None if none is found
     """
-
+    # trivial cases
     if n <= 1:
         raise ValueError("n must be greater than 1")
 
@@ -198,24 +198,18 @@ def fermat_divisor(n: int) -> int | None:
         # For even n, 2 is already a non-trivial divisor unless n = 2.
         return 2 if n > 2 else None
 
-    # ceil(sqrt(n))
-    x_start = isqrt(n)
+    # define start point and end point
+    x_start = isqrt(n) # floor(sqrt(n))
     if x_start ** 2 < n:
         x_start += 1
-
-    # floor((n + 9) / 6)
     x_end = (n + 9) // 6
 
+   # searching for n=x^2-y^2
     for x in range(x_start, x_end + 1):
         c = x ** 2 - n
         y = isqrt(c)
-
         if y ** 2 == c:
-            d = gcd(x - y, n)
-
-            if 1 < d < n:
-                return d
-
+            return x-y
     return None
 
 
