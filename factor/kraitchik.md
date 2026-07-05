@@ -1,1 +1,2 @@
-# Quadraztic Sieve
+# Kraitchik idea
+
