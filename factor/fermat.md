@@ -158,3 +158,86 @@ for ceil(sqrt(n)) <= a <= floor((n+9)/6) do
         return gcd(a-b, n)
     end if
 end for
+```
+
+# Fermat Factorization
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Algorithm](https://img.shields.io/badge/Algorithm-Fermat%20Factorization-green)
+![Status](https://img.shields.io/badge/Status-Educational-orange)
+
+This repository contains a simple Python implementation of **Fermat factorization**.
+
+The algorithm searches for a non-trivial divisor of an odd composite integer $begin:math:text$n$end:math:text$.
+
+See the [colabcode](https://colab.research.google.com/drive/1nIoWD2HAwMze5-JGfPEa57e3r06VU_eY?usp=sharing)
+
+---
+
+## Python Code
+
+```python
+from math import isqrt, gcd
+
+
+def fermat_divisor(n: int) -> int | None:
+    """
+    Fermat factorization search.
+
+    Input:
+        n: positive odd composite integer
+
+    Output:
+        a non-trivial divisor of n, or None if none is found
+    """
+
+    if n <= 1:
+        raise ValueError("n must be greater than 1")
+
+    if n % 2 == 0:
+        # For even n, 2 is already a non-trivial divisor unless n = 2.
+        return 2 if n > 2 else None
+
+    # ceil(sqrt(n))
+    x_start = isqrt(n)
+    if x_start ** 2 < n:
+        x_start += 1
+
+    # floor((n + 9) / 6)
+    x_end = (n + 9) // 6
+
+    for x in range(x_start, x_end + 1):
+        c = x ** 2 - n
+        y = isqrt(c)
+
+        if y ** 2 == c:
+            d = gcd(x - y, n)
+
+            if 1 < d < n:
+                return d
+
+    return None
+
+
+# Example
+n = 5959
+d = fermat_divisor(n)
+
+if d is not None:
+    print(f"factor 1: {d}")
+    print(f"factor 2: {n // d}")
+else:
+    print("No non-trivial divisor found")
+```
+
+---
+
+## Example Output
+
+```text
+factor 1: 59
+factor 2: 101
+```
+
+---
+
