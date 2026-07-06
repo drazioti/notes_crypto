@@ -84,3 +84,21 @@ $$a_1=x_1^2\mod{n}, a_2=x_2^2\mod{n},...,a_r=x_r^2\mod{n}$$
 $$z^2=x^2\pmod{n},\ x=x_1x_2\cdots x_r.$$
 
 Τέλος ελέγχω τον $\gcd(z-x,n).$
+
+## Παράδειγμα
+
+$$n=13\times 17\times 31=6581$$
+
+$\bullet$ $x_1=\lceil \sqrt{n} \rceil = 83$
+
+$\bullet$ $a_1=x_1^2\mod{n} = 6889\mod{n}=38=2\times 19$
+
+$\bullet$ $x_2=\lceil \sqrt{n} \rceil + 24= 107$
+
+$\bullet$ $a_2=x_2^2\mod{n} = 114119\mod{n}=4598=2\times 11^2 \times 19$
+
+Παρατηριύμε ότι $a_1a_2=(2\times 11\times 19)^2=z^2.$
+
+Άρα, $z^2\equiv (x_1\cdot x_2)^2\mod{n}$ και υπολογίζω 
+
+$$\gcd(z-x_1x_2,n)=\gcd(-8463,6851)=403=13\times 31.$$
