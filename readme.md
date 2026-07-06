@@ -1,5 +1,7 @@
 # Πρόγραμμα Μαθημάτων
 
+[textbook](https://www.dropbox.com/scl/fi/qmokv3plzpjte07xlicvz/draziotis_master.pdf?rlkey=a2v05lceg3d37gwk2wugk9id5&st=uhjpxjgk&dl=0)
+
 ## 1ο Μάθημα — [Εισαγωγή](https://docs.google.com/presentation/d/1NOBnDizZfEu4gsCJlDwNHvph-GLuzY9mVpxj0BnORyg/present#slide=id.p)
 
 ## 2ο-3o Μάθημα — [Εισαγωγή στους υποεκθετικούς αλγορίθμους παραγοντοποίησης](factor/)
