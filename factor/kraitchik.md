@@ -97,7 +97,7 @@ $\bullet$ $x_2=\lceil \sqrt{n} \rceil + 24= 107$
 
 $\bullet$ $a_2=x_2^2\mod{n} = 114119\mod{n}=4598=2\times 11^2 \times 19$
 
-Παρατηριύμε ότι $a_1a_2=(2\times 11\times 19)^2=z^2.$
+Παρατηρoύμε ότι $a_1a_2=(2\times 11\times 19)^2=z^2.$
 
 Άρα, $z^2\equiv (x_1\cdot x_2)^2\mod{n}$ και υπολογίζω 
 
