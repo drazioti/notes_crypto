@@ -1,6 +1,6 @@
 # Εισαγωγή στους αλγορίθμους παραγοντοποίησης
 
-Δείτε το [textbook]([../textbook.pdf](https://www.dropbox.com/scl/fi/qmokv3plzpjte07xlicvz/draziotis_master.pdf?rlkey=a2v05lceg3d37gwk2wugk9id5&st=rnm0u92p&dl=0)) 10.1.2, σελ. 136
+Δείτε το [textbook](https://www.dropbox.com/scl/fi/qmokv3plzpjte07xlicvz/draziotis_master.pdf?rlkey=a2v05lceg3d37gwk2wugk9id5&st=rnm0u92p&dl=0) 10.1.2, σελ. 136
 
 ## Μέθοδος Fermat για Παραγοντοποίηση
 
