@@ -179,13 +179,13 @@ $$
 
 $\mathcal{B}$ αποθηκεύειt διανύσματα εκεθετών και $\mathcal{Z}$ αποθηκεύει τις αντίστοιχες τιμές του $z$.
 
-### Step 1: Select an element
+#### Step 1: Select an element
 
 Αν $L$ η κενή λίστα, return `FAILURE`.
 
 Διαφορετικά, αφαίρεσε το πρώτο στοιχείο $z$ από την $L$.
 
-### Step 2: Compute a quadratic residue
+#### Step 2: Compute a quadratic residue
 
 Υπόλογισε
 
@@ -193,7 +193,7 @@ $$
 w=z^2\mod n.
 $$
 
-### Step 3: Test for smoothness
+#### Step 3: Test for smoothness
 
 Παραγοντοποίησε το $w$ επί της factor base $P$:
 
@@ -211,7 +211,7 @@ $$
 
 Εισήγαγε το $\mathbf{a}$ στην λίστα $\mathcal{B}$ και το $z$ στην $\mathcal{Z}$.
 
-### Step 4: Collect enough relations
+#### Step 4: Collect enough relations
 
 Αν
 
@@ -238,7 +238,7 @@ $$
 
 Πχ με Gaussian elimination $\mod{2}$.
 
-### Step 5: Construct a congruence of squares
+#### Step 5: Construct a congruence of squares
 
 Έστω,
 
@@ -274,7 +274,7 @@ $$
 x^2\equiv y^2\pmod n.
 $$
 
-### Step 6: Extract a factor
+#### Step 6: Extract a factor
 
 Αν
 
@@ -312,3 +312,7 @@ $$
 [Dixon's paper (1981)](https://www.ams.org/journals/mcom/1981-36-153/S0025-5718-1981-0595059-1/S0025-5718-1981-0595059-1.pdf)
 
 https://every-algorithm.github.io/2024/04/08/dixons_factorization_method.html
+
+# Άσκηση
+
+Να υλοποιήσετε τον αλγόριθμο του Dixon
