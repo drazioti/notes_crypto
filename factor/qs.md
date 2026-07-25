@@ -27,22 +27,24 @@ O Quadratic Sieve παράγει $B-$smooth ακεράιους με την εφ�
 | 6  | 240 | $-1 \cdot 1201$ | False |
 | 7  | 246 | $5 \cdot 7^3$ | True |
 | 8  | 239 | $-1 \cdot 2^4 \cdot 3 \cdot 5 \cdot 7$ | True |
-| 9  | 247 | $2^5 \cdot 3 \cdot 23$ | False |
+| 9  | 247 | $2^5 \cdot 3 \cdot 23$ | True |
 | 10 | 238 | $-1 \cdot 3 \cdot 719$ | False |
 | 11 | 248 | $3 \cdot 17 \cdot 53$ | False |
 | 12 | 237 | $-1 \cdot 2^3 \cdot 7 \cdot 47$ | False |
 | 13 | 249 | $2^7 \cdot 5^2$ | True |
-
+| 14 | 236 | $-1 \cdot 3^3 \cdot 5 \cdot 23$ | True |
 και 
 
-| # | Value | Factorization | B-smooth |
+| # | x | Factorization x^2-n | B-smooth |
 |--:|------:|---------------|:--------:|
 | 1 | 244 | $3 \cdot 5 \cdot 7^2$ | True |
 | 2 | 241 | $-1 \cdot 2^4 \cdot 3^2 \cdot 5$ | True |
 | 3 | 245 | $2^3 \cdot 3^2 \cdot 17$ | True |
 | 4 | 246 | $5 \cdot 7^3$ | True |
 | 5 | 239 | $-1 \cdot 2^4 \cdot 3 \cdot 5 \cdot 7$ | True |
-| 6 | 249 | $2^7 \cdot 5^2$ | True |
+| 6 | 247 | $2^5 \cdot 3 \cdot 23$ | True |
+| 7 | 249 | $2^7 \cdot 5^2$ | True |
+| 8 | 236 | $-1 \cdot 3^3 \cdot 5 \cdot 23$ | True |
 
 Ακολουθεί ο κώδικας sage που παράχθηκε ο πίνακας.
 
@@ -65,7 +67,7 @@ def is_B_smooth(B,x):
 
 
 n = 58801
-B = 17
+B = 23
 K=[]
 k=prime_pi(B)
 temp = ceil(sqrt(n))
@@ -85,3 +87,31 @@ K
 
 Μετά συνεχίζουμε όπως και στον Dixon.
 
+Σχηματίζουμε τον πίνακα
+
+$$M=
+\begin{bmatrix}
+0 & 0 & 1 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 & 1 & 0 \\
+1 & 1 & 0 & 1 & 1 & 0 \\
+0 & 0 & 0 & 1 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0
+\end{bmatrix}
+$$
+
+που οι γραμμές αντιστοιχούν στους εκθέτες [2,3,5,7,17,23].
+
+Βρίσκουμε μια λύση
+
+$$(0,1,0,0,1,1,1).$$
+
+Δηλ. οι στήλες 2,5,6,7 είναι γ.ε. mod2.
+
+Οπότε έχουμε,
+
+$x^2=2^{16}\cdot 3^{6}\cdot 5^4\cdot 23^2$ άρα 
+$x=2^{8}\cdot 3^{3}\cdot 5^2\cdot 23$ και 
+$y=241\cdot 247\cdot 249\cdot 236$ και τέλος
+$gcd(x+y,n)=127.$
