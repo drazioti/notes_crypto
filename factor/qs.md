@@ -14,6 +14,8 @@ $$\rho'(u) u=\rho(u-1), u>1 \ και\ \rho(u)=1, 0\le u\le 1. $$
 Στην συνάρτηση $\psi(x,y)$ ο λόγος $u=\frac{\ln x}{\ln y}$ λέγεται παράμετρος του Dickman.
 
 ## Quadratic Sieve
+O Quadratic Sieve παράγει $B-$smooth ακεράιους με την εφαρμογή ενός sieving. Αντι να υπολογιζει την παραγοντοποίηση
+του $x^2\pmod{n}$ υπολογίζει την παραγοντοποίηση του $x^2-n$. 
 
 | # | x | Factorization x^2-n | B-smooth |
 |--:|------:|---------------|:--------:|
@@ -67,3 +69,6 @@ for x in alternating_range(temp, temp + 10):
     if s == 5:
         break
 ```
+
+Μετά συνεχίζουμε όπως και στον Dixon.
+
