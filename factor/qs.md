@@ -33,6 +33,7 @@ O Quadratic Sieve παράγει $B-$smooth ακεράιους με την εφ�
 | 12 | 237 | $-1 \cdot 2^3 \cdot 7 \cdot 47$ | False |
 | 13 | 249 | $2^7 \cdot 5^2$ | True |
 | 14 | 236 | $-1 \cdot 3^3 \cdot 5 \cdot 23$ | True |
+
 και 
 
 | # | x | Factorization x^2-n | B-smooth |
@@ -48,7 +49,7 @@ O Quadratic Sieve παράγει $B-$smooth ακεράιους με την εφ�
 
 Μετά συνεχίζουμε όπως και στον Dixon.
 
-Σχηματίζουμε τον πίνακα
+Σχηματίζουμε τον πίνακα, όπου χρησιμοποιήσαμε μονο τις 7 πρώτες σχέσεις,
 
 $$M=
 \begin{bmatrix}
