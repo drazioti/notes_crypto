@@ -36,7 +36,7 @@ O Quadratic Sieve παράγει $B-$smooth ακεράιους με την εφ�
 
 και 
 
-| # | x | Factorization x^2-n | B-smooth |
+| # | Value | Factorization | B-smooth |
 |--:|------:|---------------|:--------:|
 | 1 | 244 | $3 \cdot 5 \cdot 7^2$ | True |
 | 2 | 241 | $-1 \cdot 2^4 \cdot 3^2 \cdot 5$ | True |
@@ -53,19 +53,12 @@ O Quadratic Sieve παράγει $B-$smooth ακεράιους με την εφ�
 
 $$M=
 \begin{bmatrix}
-
 0 & 0 & 1 & 0 & 1 & 1 & 0 \\
-
 1 & 0 & 0 & 0 & 1 & 0 & 1 \\
-
 1 & 1 & 0 & 1 & 0 & 0 & 1 \\
-
 1 & 0 & 0 & 1 & 0 & 0 & 0 \\
-
 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
-
 0 & 0 & 0 & 0 & 1 & 0 & 1
-
 \end{bmatrix}
 $$
 
