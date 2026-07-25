@@ -13,3 +13,18 @@ $$\rho'(u) u=\rho(u-1), u>1 \ και\ \rho(u)=1, 0\le u\le 1. $$
 
 Στην συνάρτηση $\psi(x,y)$ ο λόγος $u=\frac{\ln x}{\ln y}$ λέγεται παράμετρος του Dickman.
 
+## Quadratic Sieve
+
+| # | x | Factorization x^2-n | B-smooth |
+|--:|------:|---------------|:--------:|
+| 1  | 243 | $3^5$ | **True** |
+| 2  | 242 | $2 \cdot 11^2$ | **True** |
+| 3  | 244 | $2^2 \cdot 61$ | False |
+| 4  | 241 | $241$ | False |
+| 5  | 245 | $5 \cdot 7^2$ | **True** |
+| 6  | 240 | $2^4 \cdot 3 \cdot 5$ | **True** |
+| 7  | 246 | $2 \cdot 3 \cdot 41$ | False |
+| 8  | 239 | $239$ | False |
+| 9  | 247 | $13 \cdot 19$ | False |
+| 10 | 238 | $2 \cdot 7 \cdot 17$ | **True** |
+
