@@ -19,60 +19,68 @@ O Quadratic Sieve παράγει $B-$smooth ακεράιους με την εφ�
 
 | # | x | Factorization x^2-n | B-smooth |
 |--:|------:|---------------|:--------:|
-| 1  | 243 | $3^5$ | **True** |
-| 2  | 242 | $2 \cdot 11^2$ | **True** |
-| 3  | 244 | $2^2 \cdot 61$ | False |
-| 4  | 241 | $241$ | False |
-| 5  | 245 | $5 \cdot 7^2$ | **True** |
-| 6  | 240 | $2^4 \cdot 3 \cdot 5$ | **True** |
-| 7  | 246 | $2 \cdot 3 \cdot 41$ | False |
-| 8  | 239 | $239$ | False |
-| 9  | 247 | $13 \cdot 19$ | False |
-| 10 | 238 | $2 \cdot 7 \cdot 17$ | **True** |
-| 11 | 248 | $2^3 \cdot 31$ | False |
-| 12 | 237 | $3 \cdot 79$   | False |
-| 13 | 249 | $3\cdot 83$    | False |
-| 14 | 236 | $2^2\cdot 59$   | False |
-| 15 | 250 | $2\cdot 5^3$ |**True**|
+| 1  | 243 | $2^3 \cdot 31$ | False |
+| 2  | 242 | $-1 \cdot 3 \cdot 79$ | False |
+| 3  | 244 | $3 \cdot 5 \cdot 7^2$ | True |
+| 4  | 241 | $-1 \cdot 2^4 \cdot 3^2 \cdot 5$ | True |
+| 5  | 245 | $2^3 \cdot 3^2 \cdot 17$ | True |
+| 6  | 240 | $-1 \cdot 1201$ | False |
+| 7  | 246 | $5 \cdot 7^3$ | True |
+| 8  | 239 | $-1 \cdot 2^4 \cdot 3 \cdot 5 \cdot 7$ | True |
+| 9  | 247 | $2^5 \cdot 3 \cdot 23$ | False |
+| 10 | 238 | $-1 \cdot 3 \cdot 719$ | False |
+| 11 | 248 | $3 \cdot 17 \cdot 53$ | False |
+| 12 | 237 | $-1 \cdot 2^3 \cdot 7 \cdot 47$ | False |
+| 13 | 249 | $2^7 \cdot 5^2$ | True |
+
+και 
+
+| # | Value | Factorization | B-smooth |
+|--:|------:|---------------|:--------:|
+| 1 | 244 | $3 \cdot 5 \cdot 7^2$ | True |
+| 2 | 241 | $-1 \cdot 2^4 \cdot 3^2 \cdot 5$ | True |
+| 3 | 245 | $2^3 \cdot 3^2 \cdot 17$ | True |
+| 4 | 246 | $5 \cdot 7^3$ | True |
+| 5 | 239 | $-1 \cdot 2^4 \cdot 3 \cdot 5 \cdot 7$ | True |
+| 6 | 249 | $2^7 \cdot 5^2$ | True |
 
 Ακολουθεί ο κώδικας sage που παράχθηκε ο πίνακας.
 
 ```python
 
 def alternating_range(x: int, y: int):
-    """Generate x, x-1, x+1, x-2, x+2, ... until x+y."""
     if x >= y:
         raise ValueError("x must be smaller than y")
-
-    yield x  # Initial value
-
+    yield x # print the initial value x
     for distance in range(1, y - x + 1):
-        yield x - distance  # x-1, x-2, ...
-        yield x + distance  # x+1, x+2, ...
+        yield x - distance # x-1,x-2,...
+        yield x + distance # x+1,x+2,...
 
-
-def is_B_smooth(B, x):
-    """Return True if x is B-smooth."""
-    S = prime_factors(x)
-    return max(S) <= B
+def is_B_smooth(B,x):
+    S=prime_factors(x)
+    if max(S)<=B:
+        return True
+    else:
+        return False
 
 
 n = 58801
 B = 17
+K=[]
+k=prime_pi(B)
 temp = ceil(sqrt(n))
-
-i = 1  # Row index
-s = 0  # Number of B-smooth values found
-
-for x in alternating_range(temp, temp + 10):
-    if is_B_smooth(B, x):
-        s += 1
-
-    print(i, x, factor(x), is_B_smooth(B, x))
-    i += 1
-
-    if s == 5:
+i=1 # counting index
+s=0 # success
+for x in alternating_range(temp, temp+10):
+    z =x^2-n
+    if is_B_smooth(B,z):
+        s+=1
+        K.append([s,x,factor(z),is_B_smooth(B,z)])
+    print(i,x,factor(z),is_B_smooth(B,z))
+    i+=1
+    if s==k-1:
         break
+K
 ```
 
 Μετά συνεχίζουμε όπως και στον Dixon.
