@@ -8,6 +8,7 @@
 - Μέθοδος του Fermat 
 - Η Βελτίωση του Kraitchik 
 - Μέθοδος του Dixon
+- Quadratic Sieve
 
 ## 4ο Μάθημα — [Eλλειπτικές καμπύλες](elliptic_curves/)
 
