@@ -28,3 +28,42 @@ $$\rho'(u) u=\rho(u-1), u>1 \ και\ \rho(u)=1, 0\le u\le 1. $$
 | 9  | 247 | $13 \cdot 19$ | False |
 | 10 | 238 | $2 \cdot 7 \cdot 17$ | **True** |
 
+Ακολουθεί ο κώδικας sage που παράχθηκε ο πίνακας.
+
+```python
+
+def alternating_range(x: int, y: int):
+    """Generate x, x-1, x+1, x-2, x+2, ... until x+y."""
+    if x >= y:
+        raise ValueError("x must be smaller than y")
+
+    yield x  # Initial value
+
+    for distance in range(1, y - x + 1):
+        yield x - distance  # x-1, x-2, ...
+        yield x + distance  # x+1, x+2, ...
+
+
+def is_B_smooth(B, x):
+    """Return True if x is B-smooth."""
+    S = prime_factors(x)
+    return max(S) <= B
+
+
+n = 58801
+B = 17
+temp = ceil(sqrt(n))
+
+i = 1  # Row index
+s = 0  # Number of B-smooth values found
+
+for x in alternating_range(temp, temp + 10):
+    if is_B_smooth(B, x):
+        s += 1
+
+    print(i, x, factor(x), is_B_smooth(B, x))
+    i += 1
+
+    if s == 5:
+        break
+```
