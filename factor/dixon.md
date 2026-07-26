@@ -161,7 +161,7 @@ $$
 Έστω
 
 $$
-P=\lbrace -1,2,3,5,\ldots,p_k\rbrace,
+P=\lbrace 2,3,5,\ldots,p_k\rbrace,
 $$
 
 όπου $p_k$ ο μεγαλύτερος ακέραιος $\le B$. Δηλ., $|P|=\pi(B)+1=k+1.$
