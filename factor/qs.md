@@ -146,3 +146,6 @@ for x in alternating_range(temp, temp+10):
         break
 K
 ```
+# Άσκηση
+
+Να υλοποιήσετε τον αλγόριθμο "Quadratic Sieve"
