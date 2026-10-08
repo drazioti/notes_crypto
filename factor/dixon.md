@@ -41,7 +41,7 @@ Eπομένως, $y^2\equiv x^2\pmod{ n}.$
 Factor base:
 
 $$
-P_B= \{2,3,5,7\}
+P_B= \lbrace 2,3,5,7 \rbrace
 $$
 
 Ξεκινάμε από:
