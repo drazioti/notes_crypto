@@ -24,7 +24,7 @@ $$
 Aν το $B=x^{1/u}$ έχουμε, 
 
 $$
-\Pr(w \text{ is } B\text{-smooth})=\frac{\Psi(x,B)}{x}\sim \rho(u)
+\Pr(w \text{ is } B\text{-smooth})=\frac{\psi(x,B)}{x}\sim \rho(u)
 $$
 
 ## Eισαγωγή
