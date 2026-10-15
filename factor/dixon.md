@@ -129,7 +129,7 @@ $$L(n)=\exp(\sqrt{\ln{n}\ln\ln{n}}).$$
 
 $B=\exp\left(\sqrt{2\ln n\ \ln\ln n}\right)=L(n)^\sqrt{2}$ και  
 
-$r=\lfloor B^2+1\rfloor=lfloor B^2\rfloor+1$, 
+$r=\lfloor B^2+1\rfloor=\lfloor B^2\rfloor+1$, 
 
 ο αλγόριθμος του Dixon έχει πολυπλόκοτητα 
 
