@@ -122,16 +122,18 @@ $x=2^5 * 3 * 5^3 * 7^3, y = 244 * 246 * 249 * 251$
 
 
 # Πολυπλοκότητα
-Θέτουμε, $$L_n[\alpha,c]=\exp\left((c+o(1))(\ln n)^\alpha(\ln\ln n)^{1-\alpha}\right)$$.
+Θέτουμε, $$L_n[\alpha,c]=\exp\left((c+o(1))(\ln n)^\alpha(\ln\ln n)^{1-\alpha}\right)$$ και 
+$$L(n)=\exp(\sqrt{\ln{n}\ln\ln{n}}).$$
+
 Στον αλγόριθμο του Dixon εξετάζουμε $r$ τυχαίους ακεραίους $z \in [1,n]$ και ελέγχουμε αν το $z^2 \bmod n$ είναι $B$-ομαλό. Για την επιλογή 
 
-$B=\exp\left(\sqrt{2\ln n\ \ln\ln n}\right)=L_n\Big(\frac{1}{2},\sqrt{2}\Big)$ (αγνοώντας ο(1)) και  
+$B=\exp\left(\sqrt{2\ln n\ \ln\ln n}\right)=L(n)^\sqrt{2}$ και  
 
 $r=\lfloor B^2+1\rfloor$, 
 
 ο αλγόριθμος του Dixon έχει πολυπλόκοτητα 
 
-$$L_n\Big(\frac{1}{2},3\sqrt{2}\Big)$$
+$$L_n\Big(\frac{1}{2},3\sqrt{2}\Big)=L(n)^{3\sqrt{2}+o(1)}$$
 
 και η πιθανότητα αποτυχίας είναι $O(r^{-1/2})$. 
 Επομένως, η πιθανότητα ο αλγόριθμος να βρει επιτυχώς ένα μη τετριμμένο διαιρέτη του $n$ είναι
@@ -145,7 +147,7 @@ $$
 ## Optimization
 Η πολυπλοκότητα του Dixon μπορεί να βελτιωθεί στην,
 
-$$L_n\Big(\frac{1}{2},2\sqrt{2}\Big).$$
+$$L_n\Big(\frac{1}{2},2\sqrt{2}\Big)=L(n)^{2\sqrt{2}+o(1)}.$$
 
 
 # Dixon's Factorization Algorithm
