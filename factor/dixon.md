@@ -138,7 +138,7 @@ $$
 ## Optimization
 Η πολυπλοκότητα του Dixon μπορεί να βελτιωθεί στην,
 
-$$L_n(1/2,2\sqrt{2}).$$
+$$L_n\Big(\frac[1}{2},2\sqrt{2}\Big).$$
 
 
 # Dixon's Factorization Algorithm
