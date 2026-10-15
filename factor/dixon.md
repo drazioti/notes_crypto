@@ -223,7 +223,7 @@ $$
 
 Εισήγαγε το $\mathbf{a}$ στην λίστα $\mathcal{B}$ και το $z$ στην $\mathcal{Z}$.
 
-#### Step 4: Collect enough relations
+#### Step 4: Collect enough relations (Linear Algebra Step)
 
 Αν
 
