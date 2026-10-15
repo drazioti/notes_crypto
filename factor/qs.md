@@ -27,6 +27,16 @@ $$
 \Pr(w \text{ is } B\text{-smooth})=\frac{\psi(x,B)}{x}\sim \rho(u)
 $$
 
+Οι Canfield, Erdοs, Pomerance ,απόδειξαν ότι
+
+$$\rho(u)\sim u^{-u}, u=\frac{\ln{x}}{\ln{B}}$$
+
+Επομένως,
+
+$$
+\Pr(w \text{ is } B\text{-smooth})=\frac{\psi(x,B)}{x}\sim u^{-u}
+$$
+
 (Δείτε 10.1.6 στο βιβλίο).
 
 ## Eισαγωγή
