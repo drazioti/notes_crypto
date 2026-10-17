@@ -132,7 +132,7 @@ $$
 \mathbb{E}[T]
 =O\left(\frac{B^3}{\ln\ln n}\right)
 =O(B^3)
-=O\left(L(n)^{3\sqrt{2}}\right)=L_n\Big(\frac{1}{2},3\sqrt{2}\Big)
+=O\left(L(n)^{3\sqrt{2}}\right).
 $$
 
 Για να περάσουμε σε κόστος bit, παρατηρούμε ότι οι αριθμοί στους οποίους εκτελούνται οι αριθμητικές πράξεις έχουν $O(\ln n)$ bits. Με τους κλασικούς αλγορίθμους, κάθε πολλαπλασιασμός ή διαίρεση κοστίζει το πολύ $O((\ln n)^2)$ πράξεις bit.
@@ -161,7 +161,5 @@ $$
 
 $$
 \mathbb{E}[T_{\mathrm{bit}}]
-\le \exp\left((3\sqrt{2}+o(1))\sqrt{\ln n\,\ln\ln n}\right).
+\le \exp\left((3\sqrt{2}+o(1))\sqrt{\ln n\,\ln\ln n}\right)=L(n)^{3\sqrt{2}+o(1)}=L_n\Big(\frac{1}{2},3\sqrt{2}\Big).
 $$
-
-Συνεπώς, το αναμενόμενο κόστος bit έχει άνω φράγμα $L_n(1/2,3\sqrt{2})$.
