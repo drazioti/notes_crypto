@@ -24,12 +24,17 @@ $$
 Aν το $B=x^{1/u}$ έχουμε, 
 
 $$
-\Pr(w \text{ is } B\text{-smooth})=\frac{\psi(x,B)}{x}\sim \rho(u)
+\Pr(w \text{ is } B\text{-smooth})=\frac{\psi(x,B)}{x}\approx \rho(u)
 $$
 
-Οι Canfield, Erdοs, Pomerance ,απόδειξαν ότι
+Οι Canfield, Erdős και Pomerance απέδειξαν ότι, υπό κατάλληλες συνθήκες για τα $x,B$, το πλήθος των $B$-smooth θετικών ακεραίων έως το $x$ ικανοποιεί
 
-$$\rho(u)\sim u^{-u}, u=\frac{\ln{x}}{\ln{B}}$$
+$$
+\psi(x,B)=x\,u^{-u(1+o(1))},
+\qquad u=\frac{\ln x}{\ln B},
+$$
+
+όπου ο όρος $o(1)$ τείνει στο μηδέν καθώς $u\to\infty$, στο εύρος ισχύος του αποτελέσματος.
 
 Επομένως,
 
