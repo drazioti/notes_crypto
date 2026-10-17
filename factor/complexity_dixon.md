@@ -82,5 +82,5 @@ $$
 \mathbb{E}[T]
 =O\left(\frac{B^3}{\ln\ln n}\right)
 =O(B^3)
-=O\left(L(n)^{3\sqrt{2}}\right)=L_n[1/2, 3\sqrt{2}]
+=O\left(L(n)^{3\sqrt{2}}\right)=$L_n\Big(\frac{1}{2},3\sqrt{2}\Big)
 $$
