@@ -221,6 +221,11 @@ $$FB=\big\lbrace -1 \big\rbrace \cup \big\lbrace p: \left(\frac{n}{p}\right)=1, 
 Έστω $y_1,y_2$ οι δύο λύσεις της ισοτιμίας $x^2\equiv n \pmod{p}$ για κάποιον πρώτο $p$ στην FB.
 
 Για κάθε μία από τις λύσεις 
+
+# Eπιλογή του $B$
+Στον QS η επιλογή του $B$ είναι $B=L(n)^{1/2}$ ($L(n)=exp(\sqrt{\ln{n}\ln\ln{n}})).$
+Στον Dixon η επιλογή ήταν  $B=L(n)^{\sqrt{2}}.$
+
 # Άσκηση
 
 Να υλοποιήσετε τον αλγόριθμο "Quadratic Sieve"
