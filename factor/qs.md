@@ -218,7 +218,7 @@ H ιδέα που προσθέτει ο quadratic sieve στον Dixon είνα�
 
 $$FB=\big\lbrace -1 \big\rbrace \cup \big\lbrace p: \left(\frac{n}{p}\right)=1,  p\leq B \big\rbrace$$
 
-Έστω $y_1,y_2$ ο δύο λύσεις της ισοτιμίας $x^2\equiv n \pmod{p}$ για κάποιον πρώτο $p$ στην FB.
+Έστω $y_1,y_2$ οι δύο λύσεις της ισοτιμίας $x^2\equiv n \pmod{p}$ για κάποιον πρώτο $p$ στην FB.
 
 Για κάθε μία από τις λύσεις 
 # Άσκηση
