@@ -128,3 +128,71 @@ Tέλος, εξετάζουμε την περίπτωση  $x^2\equiv 50 \mod{7}
 
 Οι "μικρότερες τιμές" είναι οι B-smooth, δηλ. για $x=5,6,7,8,10.$
 
+Δίνεται κώδικας στο Sagemath.
+
+```python
+# define the problem
+N = 50
+B = 7
+xs = list(range(5, 12)) # xs=[5,6,7,8,9,10,11]
+primes = list(prime_range(B + 1)) # primes = [2,3,5,7,11]
+
+Q = {x: x^2 - N for x in xs}
+S = {x: RR(abs(Q[x])).log() for x in xs} # we use floating point arithmeticfor computing logarithms
+
+M = max(abs(Q[x]) for x in xs)
+
+
+for p in primes:
+    modulus = p # modulus start from the first prime in factor base i.e. 2
+    log_p = RR(p).log() # log_p <- float(ln(p))
+
+
+    for r in roots:
+        first = xs[0] + ((ZZ(r) - xs[0]) % modulus)
+        for x in range(int(first), xs[-1] + 1, int(modulus)):
+            S[x] -= log_p
+
+# Allow for floating-point rounding errors
+epsilon = 2.0
+smooth = []
+
+print(" x   Q(x)       score       smooth")
+
+for x in xs:
+    is_smooth = False
+
+    if abs(S[x]) < epsilon:
+        t = abs(Q[x])
+
+        for p in primes:
+            while t % p == 0:
+                t //= p
+
+        is_smooth = (t == 1)
+
+    if is_smooth:
+        smooth.append((x, Q[x]))
+
+    print(f"{x:2d}  {int(Q[x]):5d}  {float(S[x]):12.8f}   {is_smooth}")
+
+print("\nSmooth positions and values:")
+print(smooth)
+```
+| $x$ | $Q(x)$ | Score | Smooth |
+|---:|---:|---:|:---:|
+| 5 | -25 | 1.60943791 | True |
+| 6 | -14 | -0.00000000 | True |
+| 7 | -1 | 0.00000000 | True |
+| 8 | 14 | -0.00000000 | True |
+| 9 | 31 | 3.43398720 | False |
+| 10 | 50 | 1.60943791 | True |
+| 11 | 71 | 4.26267988 | False |
+
+**Smooth θέσεις και τιμές $(x,Q(x))$:**
+
+$$
+(5,-25),\ (6,-14),\ (7,-1),\ (8,14),\ (10,50).
+$$
+
+Η ένδειξη `-0.00000000` οφείλεται σε σφάλματα στρογγυλοποίησης της αριθμητικής κινητής υποδιαστολής.
