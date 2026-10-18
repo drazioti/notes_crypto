@@ -131,6 +131,10 @@ Tέλος, εξετάζουμε την περίπτωση  $x^2\equiv 50 \mod{7}
 Δίνεται κώδικας στο Sagemath.
 
 ```python
+def sqr_root_modp(a,p):
+    roots = Mod(a, p).sqrt(all=True)
+    return roots
+
 # define the problem
 N = 50
 B = 7
