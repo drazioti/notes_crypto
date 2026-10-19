@@ -173,28 +173,30 @@ $$
 
    - Βρίσκουμε τον μικρότερο ακέραιο $i$, με $0<i<m$, τέτοιο ώστε
 
-     $$ t^{2^i}\equiv 1\pmod p.$$
+     $$t^{2^i}\equiv 1\mod p.$$
 
    - Θέτουμε
 
-     $$b=c^{2^{m-i-1}}\pmod p.$$
+     $$b=c^{2^{m-i-1}}\mod p.$$
 
    - Ενημερώνουμε τις μεταβλητές:
 
-     $$
-      \begin{aligned}
-     r&\leftarrow rb\pmod p,\\
-     t&\leftarrow tb^2\pmod p,\\
-     c&\leftarrow b^2\pmod p,\\
-     m&\leftarrow i.
-     \end{aligned}
-     $$
+     
+$$
+\begin{aligned}
+r &\gets rb \pmod p,\\
+t &\gets tb^2 \pmod p,\\
+c &\gets b^2 \pmod p,\\
+m &\gets i.
+\end{aligned}
+$$
 
-6. Όταν $t\equiv 1\pmod p$, επιστρέφουμε το $r$.
+
+6. Όταν $t\equiv 1\mod p$, επιστρέφουμε το $r$.
 
 Τότε
 
-$$r^2\equiv a\pmod p.$$
+$$r^2\equiv a\mod p.$$
 
 Οι δύο λύσεις είναι
 
