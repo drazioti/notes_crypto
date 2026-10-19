@@ -142,7 +142,7 @@ xs = list(range(5, 12)) # xs=[5,6,7,8,9,10,11]
 primes = list(prime_range(B + 1)) # primes = [2,3,5,7,11]
 
 Q = {x: x^2 - N for x in xs}
-S = {x: RR(abs(Q[x])).log() for x in xs} # we use floating point arithmeticfor computing logarithms
+S = {x: RR(abs(Q[x])).log() for x in xs} # we use floating point arithmetic for computing logarithms
 
 M = max(abs(Q[x]) for x in xs)
 
@@ -150,12 +150,13 @@ M = max(abs(Q[x]) for x in xs)
 for p in primes:
     modulus = p # modulus start from the first prime in factor base i.e. 2
     log_p = RR(p).log() # log_p <- float(ln(p))
+    roots = sqr_root_modp(N,modulus) # here sage, calls Tonelli-Shanks
 
 
     for r in roots:
         first = xs[0] + ((ZZ(r) - xs[0]) % modulus)
         for x in range(int(first), xs[-1] + 1, int(modulus)):
-            S[x] -= log_p
+            S[x] -= log_p # we visit all positions and we reduce by log_p
 
 # Allow for floating-point rounding errors
 epsilon = 2.0
