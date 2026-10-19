@@ -6,3 +6,4 @@
 ## [Kόσκινο για εύρεση B-smooth](polynomial_sieving.md)
 ## [Τετραγωνικά υπόλοιπα](quadratic_residues.md)
 ## [Tετραγωνικό κόσκινο - Quadratic sieve](qs.md)
+## Βιβλιογραφία (bibliography.md)
