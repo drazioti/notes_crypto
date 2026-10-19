@@ -148,15 +148,14 @@ M = max(abs(Q[x]) for x in xs)
 
 
 for p in primes:
-    modulus = p # modulus start from the first prime in factor base i.e. 2
     log_p = RR(p).log() # log_p <- float(ln(p))
-    roots = sqr_root_modp(N,modulus) # here sage, calls Tonelli-Shanks
+    roots = sqr_root_modp(N,p) # here sage, calls Tonelli-Shanks
 
 
     for r in roots:
-        first = xs[0] + ((ZZ(r) - xs[0]) % modulus)
-        for x in range(int(first), xs[-1] + 1, int(modulus)):
-            S[x] -= log_p # we visit all positions and we reduce by log_p
+        first = xs[0] + ((int(r) - xs[0]) % p)
+        for x in range(first, xs[-1] + 1, p):
+            S[x] -= log_p # we visit all positions in S indexed by x, and we reduce by log_p
 
 # Allow for floating-point rounding errors
 epsilon = 2.0
