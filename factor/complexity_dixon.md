@@ -1,8 +1,22 @@
 Θέτουμε
 
 $$
-L(n)=\exp\left(\sqrt{\ln n\,\ln\ln n}\right).
+S(n)=\sqrt{\ln n\\ln\ln n},  
+L(n)=\exp\left(S(n)\right).
 $$
+
+$$
+L_n[c,d]=\exp\big((d+o(1))\ln(n)^c (\ln{n}\ln{\ln{n}})^{1-c}\big)
+$$
+
+Για $c=1/2$ έχουμε
+
+$$
+L_n[\frac{1}{2},d]=L(n)^{d+o(1)}.
+$$
+
+Αλγόριθμοι πολυπλοκότητας $L_n[c,d]$ με $0<c<1$ ονομάζονται υποεκθετικοί. Όσο το $c$ είναι πιο κοντά στο μηδέν τόσο καλύτερος
+είναι ο αλγόριθμος. Ο αλγόριθμος του Dixon και ο Quadratic Sieve έχουν $c=\frac{1}{2}$ διαφέρουν στο $d$. Ο Dixon έχει $d=3\sqrt{2}$ ενώ ο Quadratic Sieve $d=1.$  Ο General Number field sieve έχει $c=\frac{1}{3}.$
 
 **[1] Επιλογή του ορίου ομαλότητας**
 
