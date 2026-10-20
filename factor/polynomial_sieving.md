@@ -14,7 +14,7 @@ $$
 | $R[x]$ αρχικά | -25 | -14 | -1 | 14 | 31 | 50 | 71 |
 
 Για κάθε πρώτο $p\le 7,$ λύνουμε την τετραγωνική ισοτιμία $x^2\equiv50\pmod p$.
-Γενικά, εδω μπορούμε να χρησιμοποιήσουμε τον αλγόριθμο [Tonelli-Shanks](quadratic_residues.md). 
+Γενικά, εδω μπορούμε να χρησιμοποιήσουμε τον αλγόριθμο [Tonelli-Shanks](https://github.com/drazioti/notes_crypto/blob/main/factor/quadratic_residues.md#%CE%B1%CE%BB%CE%B3%CF%8C%CF%81%CE%B9%CE%B8%CE%BC%CE%BF%CF%82-tonellishanks). 
 Καταγράφουμε τις ρίζες που βρίσκουμε.
 
 | $p$ | Ρίζες $x\pmod p$ | Θέσεις στο $[5,11]$ |
