@@ -11,3 +11,5 @@ Translated by Alex Martsinkovsky. Translations of Mathematical Monographs,
 Vol. 232. American Mathematical Society.
 [https://doi.org/10.1090/mmono/232](https://doi.org/10.1090/mmono/232).
 
+3. A tale of two sieves, c. Poemrance, [https://www.ams.org/notices/199612/pomerance.pdf](https://www.ams.org/notices/199612/pomerance.pdf)
+
