@@ -55,13 +55,13 @@ $$
 Γι’ αυτό ορίζει το σύνολο
 
 $$
-M(B)=\lbrace z\in\lbrace 1,\ldots,n \rbrace:z^2\bmod n\text{ είναι }B\text{-smooth}\rbrace.
+M(n,B)=\lbrace z\in\lbrace 1,\ldots,n \rbrace:z^2\bmod n\text{ είναι }B\text{-smooth}\rbrace.
 $$
 
 Για ομοιόμορφη τυχαία επιλογή του $z$ από το $\lbrace 1,\ldots,n\rbrace$, η πιθανότητα επιτυχίας είναι ακριβώς
 
 $$
-\lambda=\frac{|M(B)|}{n}.
+\lambda=\frac{|M(n,B)|}{n}.
 $$
 
 Στην απόδειξη του Λήμματος 2, υπό τις υποθέσεις του λήμματος, αποδεικνύει ότι
