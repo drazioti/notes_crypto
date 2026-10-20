@@ -36,7 +36,7 @@ $$
 
 **[3] Πιθανότητα εύρεσης ομαλού υπολοίπου**
 
-Επιλέγουμε το $z$ ομοιόμορφα από το σύνολο $\{1,2,\ldots,n\}$. Για αρκετά μεγάλο $n$, η εκτίμηση του Dixon δίνει
+Επιλέγουμε το $z$ ομοιόμορφα από το σύνολο $\lbrace 1,2,\ldots,n \rbrace$. Για αρκετά μεγάλο $n$, η εκτίμηση του Dixon δίνει
 
 $$
 \Pr\left(z^2\bmod n \text{ είναι } B\text{-smooth}\right)>\frac{1}{B}.
@@ -55,7 +55,7 @@ $$
 Γι’ αυτό ορίζει το σύνολο
 
 $$
-M(B)=\lbrace z\in\{1,\ldots,n\}:z^2\bmod n\text{ είναι }B\text{-smooth}\rbrace.
+M(B)=\lbrace z\in\lbrace 1,\ldots,n \rbrace:z^2\bmod n\text{ είναι }B\text{-smooth}\rbrace.
 $$
 
 Για ομοιόμορφη τυχαία επιλογή του $z$ από το $\lbrace 1,\ldots,n\rbrace$, η πιθανότητα επιτυχίας είναι ακριβώς
