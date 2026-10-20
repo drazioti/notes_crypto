@@ -80,7 +80,7 @@ $$
 Έστω $FB=\lbrace -1,p_1,...,p_k \rbrace,$ με $p_i\leq B.$ Έστω, $Q(x)=x^2-n.$
 Ένας καλύτερος τρόπος υλοποίησης του προηγούμενου sieve είναι με χρήση της σχέσης:
 
-$$\ln|Q(z)|=\ln{w}+\sum_{i=1}^k l_i \ln{p_i}\ (z\in {\mathbb{Z}})$$
+$$\ln|Q(z)|=\ln{w}+\sum_{i=1}^k l_i \ln{p_i}\ (z\in {\mathbb{Z}}, l_i\geq 0)$$
 
 όπου $|Q(z)|=w\cdot p_1^{l_1}\cdots p_k^{l_k}$ με $\gcd(p_i,w)=1.$
 
