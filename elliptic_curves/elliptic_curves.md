@@ -141,6 +141,15 @@ $$\boxed{(1,2)+(3,4)=(-3,2)}.$$
 
 [**Πρόσθεση σημείων ελλειπτικής καμπύλης – GeoGebra**](https://www.geogebra.org/classic/yrzehhfq)
 
+Σε sagemath
+
+```python
+E = EllipticCurve([0, 0, 0, -7, 10])
+Q = E(1, 2)
+P = E(3, 4)
+Q + P
+```
+
 Έστω
 
 $$P=(x_1,y_1),\qquad Q=(x_2,y_2),$$
