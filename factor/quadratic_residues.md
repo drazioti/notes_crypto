@@ -60,7 +60,7 @@ $$
 
    $$\bigg(\frac{a}{p}\bigg)\equiv a^{(p-1)/2}\mod p.$$
 
-4. **(Reciprocity Law of Gauss) Νόμος τετραγωνικής αμοιβαιότητας:**
+4. **(Reciprocity Law of Gauss) Νόμος τετραγωνικής αντιστροφής:**
 
    $$\bigg(\frac{p}{q}\bigg)\bigg(\frac{q}{p}\bigg)=(-1)^{\frac{(p-1)(q-1)}{4}}.$$
 
